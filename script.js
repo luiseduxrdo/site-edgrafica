@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         hamburger.addEventListener('click', () => {
             // Toggle Nav
             navLinks.classList.toggle('nav-active');
-
+            
             // Hamburger Animation
             hamburger.classList.toggle('toggle');
         });
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
-
+            
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 targetElement.scrollIntoView({
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-
+    
     // Simple Scroll Animation Observer
     const observerOptions = {
         threshold: 0.1

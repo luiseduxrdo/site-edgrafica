@@ -439,7 +439,7 @@ footer {
     .nav-links.nav-active {
         right: 0;
     }
-
+    
     .hamburger {
         display: flex;
     }
