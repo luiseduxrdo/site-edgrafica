@@ -11,6 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // Hamburger Animation
             hamburger.classList.toggle('toggle');
+
+            // Toggle ARIA State
+            const isExpanded = navLinks.classList.contains('nav-active');
+            hamburger.setAttribute('aria-expanded', isExpanded);
+            hamburger.setAttribute('aria-label', isExpanded ? 'Fechar menu de navegação' : 'Abrir menu de navegação');
         });
     }
 
@@ -20,6 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (navLinks.classList.contains('nav-active')) {
                 navLinks.classList.remove('nav-active');
                 hamburger.classList.remove('toggle');
+
+                // Update ARIA State
+                hamburger.setAttribute('aria-expanded', 'false');
+                hamburger.setAttribute('aria-label', 'Abrir menu de navegação');
             }
         });
     });
