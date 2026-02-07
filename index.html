@@ -1,198 +1,225 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="EdPrint - Sua Gráfica Rápida e Moderna. Impressão digital, offset e grandes formatos.">
-    <title>EdPrint | Gráfica Rápida e Moderna</title>
-    
+    <meta name="description" content="EdPrint - Impressão Digital & Offset. Design Industrial.">
+    <title>EdPrint | Digital Offset</title>
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
-    
-    <!-- Google Fonts -->
+
+    <!-- Google Fonts: Space Grotesk (Display) & Space Mono (Body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
-    
-    <!-- Font Awesome (for icons) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
-    <!-- Header / Navbar -->
-    <header>
-        <div class="container navbar">
+    <!-- Grid Overlay for "Digital Offset" feel -->
+    <div class="grid-overlay">
+        <div class="grid-line"></div>
+        <div class="grid-line"></div>
+        <div class="grid-line"></div>
+        <div class="grid-line"></div>
+        <div class="grid-line"></div>
+    </div>
+
+    <!-- Registration Marks (Decorative) -->
+    <div class="reg-mark top-left"></div>
+    <div class="reg-mark top-right"></div>
+    <div class="reg-mark bottom-left"></div>
+    <div class="reg-mark bottom-right"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
             <a href="#" class="logo">
-                <img src="logo.png" alt="EdPrint Logo">
+                <img src="logo.png" alt="EdPrint Logo" class="nav-logo">
             </a>
-            
-            <button class="hamburger" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="nav-links">
-                <span></span>
-                <span></span>
-                <span></span>
+
+            <button class="menu-toggle" aria-label="Menu">
+                STATUS: MENU
             </button>
 
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#home" class="active">Início</a></li>
-                <li><a href="#about">Sobre Nós</a></li>
-                <li><a href="#services">Serviços</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#contact">Contatos</a></li>
+            <ul class="nav-links">
+                <li><a href="#home" data-text="01. INÍCIO">01. INÍCIO</a></li>
+                <li><a href="#services" data-text="02. SERVIÇOS">02. SERVIÇOS</a></li>
+                <li><a href="#about" data-text="03. SOBRE">03. SOBRE</a></li>
+                <li><a href="#contact" data-text="04. CONTATO">04. CONTATO</a></li>
             </ul>
         </div>
-    </header>
+    </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>A Sua Gráfica <span>Rápida e Moderna</span></h1>
-            <p>Qualidade, agilidade e tecnologia para imprimir as suas ideias com cores vibrantes.</p>
-            <a href="#contact" class="btn btn-primary">Fazer Orçamento Agora</a>
+        <div class="hero-bg-wrapper">
+            <img src="header.jpg" alt="Printing Press" class="hero-bg-img">
+            <div class="hero-overlay-dark"></div>
         </div>
-    </section>
+        <div class="container hero-container">
+            <div class="hero-meta">
+                <span>EST. 2023</span>
+                <span>LISBOA, PT</span>
+                <span>JOB: #001</span>
+            </div>
 
-    <!-- About Section (Brief) -->
-    <section id="about" style="padding: 80px 0; text-align: center;">
-        <div class="container">
-            <h2 class="section-title">Quem Somos</h2>
-            <p style="max-width: 800px; margin: 0 auto; font-size: 1.1rem; color: #555;">
-                A EdPrint é mais do que uma gráfica. Somos parceiros da sua criatividade. Combinamos tecnologia de ponta com um atendimento ágil para entregar impressões que destacam a sua marca. Do cartão de visita ao outdoor, estamos prontos para impressionar.
-            </p>
+            <h1 class="hero-title">
+                IMPRESSÃO<br>
+                <span class="highlight">MODERNA</span><br>
+                & RÁPIDA
+            </h1>
+
+            <div class="hero-footer">
+                <p class="hero-desc">
+                    Ajudamos marcas a deixarem sua marca no mundo físico.
+                    Alta fidelidade de cor, cortes precisos e prazos impossíveis.
+                </p>
+                <a href="#contact" class="btn-brutal">
+                    <span class="btn-text">INICIAR PROJETO</span>
+                    <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-image-block">
+            <!-- Using CSS background or img tag -->
+            <div class="cmyk-strip">
+                <div class="c-strip"></div>
+                <div class="m-strip"></div>
+                <div class="y-strip"></div>
+                <div class="k-strip"></div>
+            </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services">
+    <section id="services" class="section services">
         <div class="container">
-            <h2 class="section-title">Nossos Serviços</h2>
-            
+            <header class="section-header">
+                <span class="section-label">02 // CAPACIDADES</span>
+                <h2 class="section-title">NOSSOS SERVIÇOS</h2>
+            </header>
+
             <div class="services-grid">
                 <!-- Service 1 -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-print"></i>
+                <article class="service-card">
+                    <div class="card-header">
+                        <span class="service-num">01</span>
+                        <i class="fas fa-print service-icon"></i>
                     </div>
-                    <h3>Impressão Digital</h3>
-                    <p>Ideal para pequenas tiragens com rapidez e alta qualidade. Cartões de visita, flyers e convites entregues no prazo que você precisa.</p>
-                </div>
+                    <h3>DIGITAL</h3>
+                    <p>Pequenas tiragens, velocidade extrema. Qualidade fotográfica para cartões, flyers e convites.</p>
+                </article>
 
                 <!-- Service 2 -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-scroll"></i>
+                <article class="service-card">
+                    <div class="card-header">
+                        <span class="service-num">02</span>
+                        <i class="fas fa-scroll service-icon"></i>
                     </div>
-                    <h3>Grandes Formatos</h3>
-                    <p>Banners, lonas, adesivos de vinil e sinalização. Impressão em grandes dimensões com durabilidade e cores vivas.</p>
-                </div>
+                    <h3>LARGE FORMAT</h3>
+                    <p>Banners, vinil adesivo e sinalização. Imprima grande o suficiente para ser impossível de ignorar.
+                    </p>
+                </article>
 
                 <!-- Service 3 -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-layer-group"></i>
+                <article class="service-card">
+                    <div class="card-header">
+                        <span class="service-num">03</span>
+                        <i class="fas fa-layer-group service-icon"></i>
                     </div>
-                    <h3>Impressão Offset</h3>
-                    <p>A melhor solução para grandes volumes. Revistas, catálogos e pastas com o melhor custo-benefício e acabamento profissional.</p>
-                </div>
-                
-                 <!-- Service 4 -->
-                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-cut"></i>
+                    <h3>OFFSET</h3>
+                    <p>Produção em escala industrial. A escolha econômica para grandes volumes com consistência de cor
+                        absoluta.</p>
+                </article>
+
+                <!-- Service 4 -->
+                <article class="service-card">
+                    <div class="card-header">
+                        <span class="service-num">04</span>
+                        <i class="fas fa-cut service-icon"></i>
                     </div>
-                    <h3>Acabamentos Especiais</h3>
-                    <p>Laminação fosca ou brilho, verniz localizado, corte especial e encadernação. Detalhes que fazem toda a diferença.</p>
-                </div>
-            </div>
-            
-            <div style="text-align: center; margin-top: 50px;">
-                <a href="#contact" class="btn btn-primary">Ver Tabela de Preços</a>
+                    <h3>FINISHING</h3>
+                    <p>Laminação, corte especial, verniz UV. O toque final que transforma papel em produto.</p>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Instagram Section -->
-    <section class="instagram-section">
-        <div class="container">
-            <h2 class="section-title">Acompanhe no Instagram</h2>
-            <p>Siga @EdPrintGrafica e veja nossos últimos trabalhos.</p>
-            
-            <div class="instagram-placeholder">
-                <div class="insta-item"></div>
-                <div class="insta-item"></div>
-                <div class="insta-item"></div>
-                <div class="insta-item"></div>
+    <!-- Marquee / Separator -->
+    <div class="marquee-container">
+        <div class="marquee-content">
+            IMPRESSÃO DE ALTA QUALIDADE +++ DESIGN INDUSTRIAL +++ ENTREGA RÁPIDA +++ CORES VIBRANTES +++
+            IMPRESSÃO DE ALTA QUALIDADE +++ DESIGN INDUSTRIAL +++ ENTREGA RÁPIDA +++ CORES VIBRANTES +++
+        </div>
+    </div>
+
+    <!-- About / Instagram Section -->
+    <section id="about" class="section about">
+        <div class="container about-layout">
+            <div class="about-text">
+                <span class="section-label">03 // SOBRE NÓS</span>
+                <h2>MAIS QUE TINTA<br>NO PAPEL.</h2>
+                <p>Somos a EdPrint. Combinamos a precisão da engenharia com a arte da impressão. Não somos apenas uma
+                    gráfica; somos o último passo do seu processo criativo.</p>
+                <a href="https://instagram.com" target="_blank" class="link-arrow">
+                    SIGA NO INSTAGRAM <i class="fas fa-external-link-alt"></i>
+                </a>
             </div>
-            
-            <!-- In a real scenario, an Elfsight script or Instagram Graph API integration would go here -->
-             <button class="btn btn-primary btn-instagram" style="margin-top: 30px;">
-                <i class="fab fa-instagram"></i> Seguir Agora
-            </button>
+            <div class="about-visual">
+                <div class="insta-grid">
+                    <div class="insta-placeholder">FEED 01</div>
+                    <div class="insta-placeholder">FEED 02</div>
+                    <div class="insta-placeholder">FEED 03</div>
+                    <div class="insta-placeholder">FEED 04</div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Footer & Location -->
-    <footer id="contact">
-        <div class="container">
-            <div class="footer-content">
-                
-                <!-- Brand & Address -->
-                <div class="footer-col">
-                    <div class="logo" style="margin-bottom: 20px;">
-                        <img src="logo.png" alt="EdPrint Logo" style="height: 40px; filter: brightness(0) invert(1);"> 
-                        <!-- Logo filter to make it white if needed, assuming original is dark or colorful -->
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container footer-container">
+            <div class="footer-main">
+                <h2 class="footer-cta">VAMOS IMPRIMIR<br>ALGO INCRÍVEL.</h2>
+                <div class="footer-info">
+                    <div class="info-block">
+                        <h4>VISITE</h4>
+                        <p>Rua da Criatividade, 123<br>Lisboa, Portugal</p>
                     </div>
-                    <p><strong>EdPrint Gráfica Rápida</strong></p>
-                    <p>Rua da Criatividade, 123 - Centro</p>
-                    <p>Lisboa, Portugal - 1000-001</p>
-                    <br>
-                    <p><i class="fas fa-phone"></i> +351 21 000 0000</p>
-                    <p><i class="fas fa-envelope"></i> contato@edprint.com</p>
-                </div>
-                
-                <!-- Quick Links -->
-                <div class="footer-col">
-                    <h4>Acesso Rápido</h4>
-                    <ul>
-                        <li><a href="#home">Início</a></li>
-                        <li><a href="#about">Sobre Nós</a></li>
-                        <li><a href="#services">Serviços</a></li>
-                        <li><a href="#portfolio">Portfólio</a></li>
-                        <li><a href="#contact">Peça seu Orçamento</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Map -->
-                <div class="footer-col">
-                    <h4>Localização</h4>
-                    <div class="map-container">
-                         <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.919799986348!2d-9.14197268465494!3d38.71966297959844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1933868e379051%3A0x8673323080c55866!2sPraca%20do%20Comercio!5e0!3m2!1sen!2spt!4v1628173428932!5m2!1sen!2spt" 
-                            width="100%" 
-                            height="100%" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy">
-                        </iframe>
+                    <div class="info-block">
+                        <h4>FALE</h4>
+                        <p>+351 21 000 0000<br>contato@edprint.com</p>
+                    </div>
+                    <div class="info-block">
+                        <h4>SOCIAL</h4>
+                        <ul>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">Facebook</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            
             <div class="footer-bottom">
-                <p>&copy; 2023 EdPrint. Todos os direitos reservados. Design by Jules.</p>
+                <span>&copy; 2023 EDPRINT. ALL RIGHTS RESERVED.</span>
+                <span>DESIGN SYSTEM: DIGITAL OFFSET</span>
             </div>
         </div>
     </footer>
 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/550000000000" class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
     <!-- Scripts -->
     <script src="script.js"></script>
 </body>
+
 </html>
